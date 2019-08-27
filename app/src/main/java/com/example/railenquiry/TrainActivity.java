@@ -23,8 +23,8 @@ public class TrainActivity extends AppCompatActivity {
         }
         dialog.dismiss();
 
-        // String s="https://www.railyatri.in/trains-between-stations";
-        String s="https://www.trainspnrstatus.com/trains";
+        String s="https://www.railyatri.in/trains-between-stations";
+        //String s="https://www.trainspnrstatus.com/trains";
         WebView browser=findViewById(R.id.webView);
         browser.setWebViewClient(new WebViewClient());
         browser.loadUrl(s);
