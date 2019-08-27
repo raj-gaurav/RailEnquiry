@@ -1,5 +1,6 @@
 package com.example.railenquiry;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -27,16 +28,16 @@ public class PNR_entry extends AppCompatActivity {
         getSupportActionBar().setTitle("PNR");
 
 
+        ProgressDialog dialog=new ProgressDialog(this);
+        dialog.show();
+        dialog.setMessage("Loading...");
 
-        status.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String pnr_no=pnr.getText().toString().trim();
-                Intent i= new Intent(getApplicationContext(),PNRStatus.class);
-                i.putExtra("pnr",pnr_no);
-                startActivity(i);
-            }
-        });
+        String pnr_no=pnr.getText().toString().trim();
+        Intent i= new Intent(getApplicationContext(),PNRStatus.class);
+        i.putExtra("pnr",pnr_no);
+        startActivity(i);
+        finish();
+
 
 
 
