@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RailEnquiry</string>
+    <string name="about">
+
+        This app consist of the facility of knowing the current status of your PNR. This also helps you to know the current status of any train and also can see the trains between the source and destination provided.
+        We are looking forward for upgradation.<b> Suggestions will be highly appreciated.</b> Thank you.
+        <br>
+
+        </br>
+
+    </string>
+</resources>
