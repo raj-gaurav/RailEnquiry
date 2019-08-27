@@ -12,7 +12,8 @@ public class TrainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_train);
 
-        String s="https://www.railyatri.in/trains-between-stations";
+       // String s="https://www.railyatri.in/trains-between-stations";
+        String s="https://www.trainspnrstatus.com/trains";
         WebView browser=findViewById(R.id.webView);
         browser.setWebViewClient(new WebViewClient());
         browser.loadUrl(s);

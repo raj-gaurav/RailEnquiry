@@ -1,5 +1,6 @@
 package com.example.railenquiry;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.webkit.WebView;
@@ -11,11 +12,16 @@ public class PNRStatus extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pnrstatus);
+
+        String pnr=getIntent().getExtras().getString("pnr");
+
 //https://api.railwayapi.com/v2/pnr-status/pnr/6733431064/apikey/92243deb92af26be2fbeac69d7f67565/
-        String s="https://www.ndtv.com/indian-railway/live-train-status";
+        String s="https://etrain.info/in?PNR=";
+       // String url=s+pnr;
+        String url="https://www.trainspnrstatus.com/";
         WebView browser=findViewById(R.id.webView);
         browser.setWebViewClient(new WebViewClient());
-        browser.loadUrl(s);
+        browser.loadUrl(url);
 
     }
 }

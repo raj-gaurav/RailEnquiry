@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                {
                    err1.setVisibility(View.INVISIBLE);
                    err2.setVisibility(View.INVISIBLE);
-                   Intent i=new Intent(MainActivity.this,PNR_entry.class);
+                   Intent i=new Intent(MainActivity.this,PNRStatus.class);
                    startActivity(i);
                }
                else
