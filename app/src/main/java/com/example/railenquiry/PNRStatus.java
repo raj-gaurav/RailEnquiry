@@ -19,11 +19,7 @@ public class PNRStatus extends AppCompatActivity {
         ProgressDialog dialog=new ProgressDialog(this);
         dialog.show();
         dialog.setMessage("Loading...");
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
         dialog.dismiss();
 
 //https://api.railwayapi.com/v2/pnr-status/pnr/6733431064/apikey/92243deb92af26be2fbeac69d7f67565/
